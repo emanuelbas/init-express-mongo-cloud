@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 
 const User = require('../models/User');
 
-router.post('/registro', async (req, res) => {
+router.post('/registrar', async (req, res) => {
     const { email, password } = req.body;
     console.log(email,password)
     const nuevoUsuario = new User({email,password});
